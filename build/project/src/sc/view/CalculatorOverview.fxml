@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane styleClass="background" stylesheets="@simplecount.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sc.view.CalculatorOverviewController">
+   <children>
+      <Pane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="450.0">
+               <children>
+                  <Button id="0" layoutX="32.0" layoutY="393.0" mnemonicParsing="false" onAction="#eventNumber" onKeyPressed="#eventKeyboardPressed" prefHeight="46.0" prefWidth="149.0" text="0" textAlignment="CENTER" textFill="#4d5c79" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="269.0" AnchorPane.topAnchor="393.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button id="1" layoutX="32.0" layoutY="335.0" mnemonicParsing="false" onAction="#eventNumber" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="1" AnchorPane.bottomAnchor="116.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="349.0" AnchorPane.topAnchor="335.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="2" layoutX="112.0" layoutY="335.0" mnemonicParsing="false" onAction="#eventNumber" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="2" AnchorPane.bottomAnchor="116.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="269.0" AnchorPane.topAnchor="335.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="191.0" layoutY="392.0" mnemonicParsing="false" onAction="#eventComma" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="," AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="191.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="392.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="3" layoutX="191.0" layoutY="335.0" mnemonicParsing="false" onAction="#eventNumber" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="3" AnchorPane.bottomAnchor="116.0" AnchorPane.leftAnchor="191.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="335.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="4" layoutX="32.0" layoutY="280.0" mnemonicParsing="false" onAction="#eventNumber" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="5" layoutX="112.0" layoutY="280.0" mnemonicParsing="false" onAction="#eventNumber" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="5">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="6" layoutX="191.0" layoutY="280.0" mnemonicParsing="false" onAction="#eventNumber" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="6">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="7" layoutX="32.0" layoutY="222.0" mnemonicParsing="false" onAction="#eventNumber" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="7">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="8" layoutX="112.0" layoutY="222.0" mnemonicParsing="false" onAction="#eventNumber" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="8">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="9" layoutX="191.0" layoutY="222.0" mnemonicParsing="false" onAction="#eventNumber" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="9">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="COS" layoutX="32.0" layoutY="164.0" mnemonicParsing="false" onAction="#eventOperationOneArgument" prefHeight="49.0" prefWidth="69.0" text="cos" />
+                  <Button id="SIN" layoutX="112.0" layoutY="164.0" mnemonicParsing="false" onAction="#eventOperationOneArgument" prefHeight="49.0" prefWidth="69.0" text="sin" />
+                  <Button id="TAN" layoutX="191.0" layoutY="164.0" mnemonicParsing="false" onAction="#eventOperationOneArgument" prefHeight="49.0" prefWidth="69.0" text="tan" />
+                  <Button id="ADD" layoutX="270.0" layoutY="392.0" mnemonicParsing="false" onAction="#eventOperationTwoArguments" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="+" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="392.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="LESS" layoutX="270.0" layoutY="335.0" mnemonicParsing="false" onAction="#eventOperationTwoArguments" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="-">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="DIV" layoutX="270.0" layoutY="280.0" mnemonicParsing="false" onAction="#eventOperationTwoArguments" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="/" AnchorPane.bottomAnchor="171.0" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="280.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="MUL" layoutX="270.0" layoutY="222.0" mnemonicParsing="false" onAction="#eventOperationTwoArguments" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="*">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button id="ROOT" layoutX="270.0" layoutY="164.0" mnemonicParsing="false" onAction="#eventOperationOneArgument" prefHeight="49.0" prefWidth="69.0" text="√">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button defaultButton="true" layoutX="348.0" layoutY="281.0" mnemonicParsing="false" onAction="#eventOperationEqual" prefHeight="160.0" prefWidth="69.0" text="=" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="348.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="281.0">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Button>
+                  <Button cancelButton="true" layoutX="348.0" layoutY="105.0" mnemonicParsing="false" onAction="#eventReset" prefHeight="108.0" prefWidth="69.0" styleClass="buttondelete" text="R" AnchorPane.topAnchor="105.0" />
+                  <Button id="LOG" layoutX="32.0" layoutY="105.0" mnemonicParsing="false" onAction="#eventOperationOneArgument" prefHeight="49.0" prefWidth="69.0" text="log" />
+                  <Button id="EXP" layoutX="112.0" layoutY="105.0" mnemonicParsing="false" onAction="#eventOperationOneArgument" prefHeight="49.0" prefWidth="69.0" text="exp" />
+                  <Button id="SQUARE" layoutX="191.0" layoutY="105.0" mnemonicParsing="false" onAction="#eventOperationTwoArguments" prefHeight="49.0" prefWidth="69.0" text="^" />
+                  <Button layoutX="270.0" layoutY="105.0" mnemonicParsing="false" onAction="#eventDelete" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="del">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="displayText" editable="false" layoutX="32.0" layoutY="14.0" prefHeight="83.0" prefWidth="298.0" text="0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextArea>
+                  <TextArea fx:id="displayOp" editable="false" layoutX="339.0" layoutY="14.0" prefHeight="83.0" prefWidth="77.0" text=" ">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </AnchorPane>
+            <Button id="PRCT" layoutX="348.0" layoutY="222.0" mnemonicParsing="false" onAction="#eventOperationOneArgument" onKeyPressed="#eventKeyboardPressed" prefHeight="49.0" prefWidth="69.0" text="\%">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
